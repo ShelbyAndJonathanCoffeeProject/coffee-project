@@ -42,11 +42,27 @@ function updateCoffees(e) {
     filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
-            filteredCoffees.push(coffee);
+            if (coffee.roast === selectedRoast) {
+                filteredCoffees.push(coffee);
+            }
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+// function allCoffees(e) {
+//     e.preventDefault(); // don't submit the form, we just want to update the data
+//     var all = roastSelection.value;
+//     filteredCoffees = [];
+//     coffees.forEach(function(coffee) {
+//         if (coffee.roast === all) {
+//             if (coffee.roast === all) {
+//                 filteredCoffees.push(coffee);
+//             }
+//         }
+//     });
+//     tbody.innerHTML = renderCoffees(filteredCoffees);
+// }
 
 function coffeeFilter(e) {
     e.preventDefault();
