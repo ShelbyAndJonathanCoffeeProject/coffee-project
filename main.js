@@ -1,6 +1,6 @@
 "use strict"
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
+{id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
     {id: 4, name: 'City', roast: 'medium'},
@@ -15,7 +15,8 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
- var filteredCoffees= coffees;
+
+var filteredCoffees= coffees.reverse();
 
 function renderCoffee(coffee) {
     var html = '<tr class="coffee col-6">';
